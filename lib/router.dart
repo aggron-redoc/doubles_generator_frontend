@@ -20,14 +20,14 @@ class RouteManager {
         );
       case loginRegister:
         return PageTransition(
-          child: const LoginRegister(),
+          child: LoginRegister(),
           type: PageTransitionType.fade,
           alignment: Alignment.center,
           duration: const Duration(milliseconds: 350),
         );
       case doublesGenerator:
         return PageTransition(
-          child: const DoublesGenerator(),
+          child: DoublesGenerator(),
           type: PageTransitionType.fade,
           alignment: Alignment.center,
           duration: const Duration(milliseconds: 350),
