@@ -5,6 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   runApp(const MyApp());
 }
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         snackBarTheme: SnackBarThemeData(
-            backgroundColor: Theme.of(context).hoverColor,
+            backgroundColor: Theme.of(context).hintColor,
             behavior: SnackBarBehavior.floating,
             contentTextStyle: GoogleFonts.oswald(
               textStyle: const TextStyle(
@@ -36,6 +38,9 @@ class MyApp extends StatelessWidget {
               ),
             ),
             elevation: 5.0),
+        progressIndicatorTheme: const ProgressIndicatorThemeData(
+          color: Color(0xff25d050),
+        ),
       ),
       initialRoute: RouteManager.intro,
       onGenerateRoute: RouteManager.generateRoute,
