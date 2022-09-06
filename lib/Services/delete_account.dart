@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
+import '../flutter_secret.dart';
+
 class Delete {
   String groupid, password;
   String resource;
@@ -11,7 +13,7 @@ class Delete {
     Map result = {};
     Map<String, String> header = {"groupId": groupid, "password": password};
     http.Response response = await http.delete(
-        Uri.parse("https://Doubles-generator.arunn5.repl.co/$resource"),
+        Uri.parse(url(resource)),
         headers: header);
     if (response.statusCode == 200) {
       if (kDebugMode) {

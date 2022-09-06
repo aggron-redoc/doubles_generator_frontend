@@ -45,3 +45,10 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+#Secret
+/lib/flutter_secret.dart
+/assets/appLogo.png
+/assets/appLogo_foreground.png
+/assets/intro.json
+/assets/logo.png

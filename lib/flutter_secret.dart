@@ -1,0 +1,1 @@
+String url(resource) => "https://Doubles-generator.arunn5.repl.co/$resource";

@@ -17,15 +17,20 @@ class SlidableTile extends StatelessWidget {
           SlidableAction(
             icon: Icons.delete_outline,
             onPressed: (context) async => remove(player),
+            autoClose: true,
+            backgroundColor: Theme.of(context).primaryColor,
+            foregroundColor: const Color(0xff25d050),
           )
         ],
       ),
-      child: Text(
-        player,
-        textAlign: TextAlign.center,
-        style: GoogleFonts.oswald(
-            textStyle:
-            const TextStyle(fontSize: 30, color: Color(0xff25d050))),
+      child: ListTile(
+        title: Text(
+          player,
+          textAlign: TextAlign.center,
+          style: GoogleFonts.oswald(
+              textStyle:
+              const TextStyle(fontSize: 30, color: Color(0xff25d050))),
+        ),
       ),
     );
   }

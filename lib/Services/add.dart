@@ -2,6 +2,8 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
+import '../flutter_secret.dart';
+
 class Add {
   String groupid, password,player,resource;
   Add(
@@ -17,7 +19,7 @@ class Add {
     Map<String,String> body={'player': player};
     var encodedBody = json.encode(body);
     http.Response response = await http.patch(
-        Uri.parse("https://Doubles-generator.arunn5.repl.co/$resource"),
+        Uri.parse(url(resource)),
         headers: header,
         body: encodedBody);
     if (response.statusCode == 200) {

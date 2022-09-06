@@ -5,6 +5,7 @@ import 'package:doubles_generator_frontend/Services/delete_account.dart';
 import 'package:doubles_generator_frontend/Services/randomize.dart';
 import 'package:doubles_generator_frontend/Services/so_far.dart';
 import 'package:doubles_generator_frontend/custom_widgets/edit.dart';
+import 'package:doubles_generator_frontend/custom_widgets/history.dart';
 import 'package:doubles_generator_frontend/custom_widgets/utilities/menu_item.dart';
 import 'package:doubles_generator_frontend/custom_widgets/utilities/snackbar.dart';
 import 'package:doubles_generator_frontend/router.dart';
@@ -198,7 +199,7 @@ class _DoublesGeneratorState extends State<DoublesGenerator> {
   late List<Widget> functionalities = [
     randomize_widget.Randomize(randomizer: randomizer, clear: clear),
     Edit(soFar: soFar, remove: remove, adder: adder,),
-    Container()
+    History(soFar: soFar)
   ];
 
   @override
