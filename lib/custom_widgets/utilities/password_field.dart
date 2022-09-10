@@ -18,6 +18,7 @@ class _PasswordFieldState extends State<PasswordField> {
   Widget build(BuildContext context) {
     return TextFormField(
       obscureText: _isHidden,
+      cursorColor: const Color(0xff25d050),
       validator: (value) {
         var x = value!;
         if (x.isEmpty) {

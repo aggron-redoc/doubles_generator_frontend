@@ -18,6 +18,7 @@ class GeneralField extends StatelessWidget {
         }
         return null;
       },
+      cursorColor: const Color(0xff25d050),
       onEditingComplete: () => FocusScope.of(context).nextFocus(),
       style: GoogleFonts.oswald(
         textStyle: const TextStyle(

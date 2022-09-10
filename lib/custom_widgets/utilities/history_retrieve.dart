@@ -11,9 +11,11 @@ List<String> historyRetriever(Map<String,List> data){
       }
     }
   }
-  for(int i=0;i<(data["players"]?.length)!;i++){
-    if(data["coupling"]![i]!=0){
-      result.add(data["players"]![i]);
+  if((data["coupling"]?.isNotEmpty)!){
+    for(int i=0;i<(data["players"]?.length)!;i++){
+      if(data["coupling"]![i]!=0){
+        result.add(data["players"]![i]);
+      }
     }
   }
   return result;

@@ -24,6 +24,7 @@ class _PlayersState extends State<Players> {
   TextField addPlayer() {
     return TextField(
       autofocus: true,
+      cursorColor: const Color(0xff25d050),
       style: GoogleFonts.oswald(
         textStyle: const TextStyle(
           color: Color(0xff25d050),

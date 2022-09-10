@@ -42,7 +42,7 @@ class _HistoryState extends State<History> {
           var data = snapshot.data! as Map;
           List<String> historyDisplay=historyRetriever(Map<String,List>.from(data));
           return Padding(
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: 30,
               vertical: 60
             ),
