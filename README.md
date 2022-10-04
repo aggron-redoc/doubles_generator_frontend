@@ -9,6 +9,4 @@ Features:
  3. Add player or remove player from the group as desired
  4. See previously formed teams in history
 
-Pages:
-login_or_register and doubles_generator holds the scaffold widgets, bottom navigation bar, corresponding entity widgets(eg. login for login_or_register) 
-and the suitable methods to call the appropriate services
+For viewing the backend of this application, refer to this repository: https://github.com/aggron-redoc/Doubles-generator
